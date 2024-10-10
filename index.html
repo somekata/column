@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>役に立つコラム</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Additional style for hover functionality */
+      .nav-menu li {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      /* Submenu hidden by default */
+      .nav-menu li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f0f4f8;
+        padding: 10px;
+        border: 1px solid #ccc;
+        z-index: 1000;
+      }
+
+      /* Show submenu on hover */
+      .nav-menu li:hover ul {
+        display: block;
+      }
+
+      /* Submenu list styling */
+      .nav-menu li ul li {
+        display: block;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>役に立つコラム</h1>
+    </header>
+
+    <div class="container">
+      <ul class="nav-menu">
+        <!-- Convert all links to buttons -->
+        <li>
+          <button onclick="location.href='AaDO2.html'">
+            A-aDO<sub>2</sub>
+          </button>
+        </li>
+        <li><button onclick="location.href='AaDO2.html#RQ'">呼吸商</button></li>
+        <li>
+          <button onclick="location.href='abbreviation.html'">略語</button>
+        </li>
+        <li>
+          <button onclick="location.href='aminoacid.html'">アミノ酸</button>
+        </li>
+        <li><button onclick="location.href='amr.html'">耐性菌</button></li>
+        <li>
+          <button onclick="location.href='antibiotics.html'">抗菌薬</button>
+        </li>
+        <li>
+          <button onclick="location.href='coma.html'">昏睡</button>
+        </li>
+        <li>
+          <button onclick="location.href='malaria.html'">マラリア</button>
+        </li>
+        <li>
+          <button onclick="location.href='metabolism.html'">代謝</button>
+        </li>
+        <li>
+          <button onclick="location.href='naat.html'">NAAT</button>
+        </li>
+        <li>
+          <button onclick="location.href='protein.html'">蛋白</button>
+        </li>
+
+        <!-- "語源" button with a submenu on hover -->
+        <li>
+          <button>語源</button>
+          <ul>
+            <li><a href="gogen.html#1">アセチルコリン</a></li>
+            <li><a href="gogen.html#5">アミノ酸</a></li>
+            <li><a href="gogen.html#4">アラキドン酸</a></li>
+            <li><a href="gogen.html#8">アラニン</a></li>
+            <li><a href="gogen.html#9">アルブミン</a></li>
+            <li><a href="gogen.html#7">カテコラミン</a></li>
+            <li><a href="gogen.html#6">カルボン酸</a></li>
+            <li><a href="gogen.html#10">キナーゼ</a></li>
+            <li><a href="gogen.html#8">グリシン</a></li>
+            <li><a href="gogen.html#3">セロトニン</a></li>
+            <li><a href="gogen.html#2">ロイコトリエン</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="fbutton">
+      <button onclick="history.back()">戻る</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 染方史郎の細菌楽教室</p>
+    </footer>
+  </body>
+</html>
